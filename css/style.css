@@ -1,0 +1,30 @@
+nav.main-nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    height: 100px;
+    background-color: var(--nav-light-mode-background-color);
+    box-shadow: var(--box-shadow);
+    white-space: nowrap;
+}
+
+nav.main-nav h2
+{
+    font-size: 1.3rem;
+}
+
+nav.main-nav .btn.theme-toggle-btn
+{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: inherit;
+    font-size: 1.1rem;
+}
+
+nav.main-nav .btn.theme-toggle-btn i
+{
+    margin-left: 10px;
+}
