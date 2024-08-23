@@ -67,3 +67,93 @@ section.search-and-filter :is(div:first-child input, select)
     box-shadow: var(--box-shadow);
     cursor: pointer;
 }
+
+
+/* Section: Country Cards */
+
+/* Country Cards Container */
+section.country-cards
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+/* Country Card */
+section.country-cards article
+{
+    width: 250px;
+    height: 300px;
+    background-color: var(--country-card-light-mode-background-color);
+    box-shadow: var(--box-shadow);
+    white-space: nowrap;
+    border-radius: calc(var(--base-border-radius) / 2);
+    color: var(--secondary-light-mode-text-color);
+    cursor: pointer;
+    transition: transform .15s ease-in;
+}
+
+/* Country Card on Hover */
+section.country-cards article:hover
+{
+    transform: scale(1.05);
+    transition: transform .15s ease-in;
+}
+
+/* Country Card Image */
+section.country-cards article img
+{
+    border-radius: calc(var(--base-border-radius) / 2) calc(var(--base-border-radius) / 2) 0 0;
+}
+
+/* Country Card Bottom Part */
+section.country-cards article .card-bottom
+{
+    padding: 20px;
+}
+
+/* Country Card Country Name */
+section.country-cards article .card-bottom .country-name
+{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Country Card Unordered List */
+section.country-cards article .card-bottom ul
+{
+    margin-top: 10px;
+}
+
+/* Country Card List Items (without the first one) */
+section.country-cards article .card-bottom ul > * + *
+{
+    margin-top: 5px;
+}
+
+/* Country Card List Items */
+section.country-cards article .card-bottom ul li
+{
+    font-weight: bold;
+}
+
+/* Country Card List Items Span */
+section.country-cards article .card-bottom ul li span
+{
+    font-weight: normal;
+}
+
+
+
+/* Responsiveness */
+@media screen and (min-width: 768px)
+{
+    section.country-cards
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

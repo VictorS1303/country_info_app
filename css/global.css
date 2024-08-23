@@ -31,3 +31,11 @@ button
     background-color: transparent;
     cursor: pointer;
 }
+
+img
+{
+    display: block;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
