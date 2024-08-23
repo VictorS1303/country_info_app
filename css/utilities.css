@@ -4,7 +4,8 @@
 
     /* Light Mode */
     --body-light-mode-background-color: #fafafa;
-    --primary-light-mode-text-color: ;
+    --primary-light-mode-text-color: #000;
+    --secondary-light-mode-text-color: #333;
     --nav-light-mode-background-color: #fff;
     --input-light-mode-background-color: #fff;
     --region-filter-light-mode-background-color: #fff;

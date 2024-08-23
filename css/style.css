@@ -28,3 +28,42 @@ nav.main-nav .btn.theme-toggle-btn i
 {
     margin-left: 10px;
 }
+
+/* Section: Search & Filter */
+section.search-and-filter
+{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+}
+
+section.search-and-filter div:first-child
+{
+    position: relative;
+}
+
+section.search-and-filter div:first-child input
+{
+    text-indent: 30px;
+    color: var(--primary-light-mode-text-color);
+}
+
+section.search-and-filter div:first-child i
+{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(-50%, -50%);
+}
+
+section.search-and-filter :is(div:first-child input, select) 
+{
+    font-family: inherit;
+    background-color: var(--input-light-mode-background-color);
+    padding: 10px;
+    width: 100%;
+    border-radius: calc(var(--base-border-radius) / 2);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
