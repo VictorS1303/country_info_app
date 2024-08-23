@@ -1,0 +1,19 @@
+:root
+{
+    /* Colors */
+
+    /* Light Mode */
+    --body-light-mode-background-color: #fafafa;
+    --primary-light-mode-text-color: ;
+    --nav-light-mode-background-color: #fff;
+    --input-light-mode-background-color: #fff;
+    --region-filter-light-mode-background-color: #fff;
+    --country-card-light-mode-background-color: #fff;
+
+    /* Radii */
+    --base-border-radius: 10px;
+    
+    /* Shadows */
+    --text-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
